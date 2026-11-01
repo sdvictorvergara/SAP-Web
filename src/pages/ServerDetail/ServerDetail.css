@@ -1,0 +1,86 @@
+.detail__title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.detail__icon {
+    flex: none;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.detail__name,
+.detail__name-input {
+    flex: 1;
+    min-width: 0;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--Text_Strong);
+}
+
+.detail__name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.detail__name-input {
+    border: none;
+    border-bottom: 1px solid var(--Text_Icons);
+    border-radius: 0;
+    background: transparent;
+}
+
+.detail__name-input:focus {
+    outline: none;
+    border-bottom-color: var(--Role_Cards);
+}
+
+.detail__tools {
+    flex: none;
+    display: flex;
+    gap: 8px;
+}
+
+.icon-btn {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--Text_Icons);
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--Text_Icons);
+}
+
+.icon-btn:hover {
+    color: var(--Text_Strong);
+    border-color: var(--Text_Strong);
+}
+
+.icon-btn--plain {
+    border-color: transparent;
+    font-size: 20px;
+}
+
+.detail__box {
+    padding: 12px 14px 6px;
+    border: 1px solid var(--Text_Icons);
+    border-radius: 10px;
+}
+
+.detail__box h2 {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.detail__box hr {
+    margin: 12px 0;
+    border: none;
+    border-top: 1px solid var(--Line);
+}

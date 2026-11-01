@@ -1,0 +1,28 @@
+.servers-page {
+    min-height: calc(100dvh - 61px);
+}
+
+.fab {
+    position: sticky;
+    bottom: 18px;
+    align-self: flex-end;
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border-radius: 999px;
+    background: var(--Buttons);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+.fab i {
+    font-size: 16px;
+}
+
+.fab:hover {
+    filter: brightness(1.12);
+}

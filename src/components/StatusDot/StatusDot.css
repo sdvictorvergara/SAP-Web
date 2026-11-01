@@ -1,0 +1,17 @@
+.status-dot {
+    display: inline-block;
+    flex: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.status-dot--on {
+    background: var(--Online_Mode);
+    box-shadow: 0 0 6px rgba(59, 255, 0, 0.55);
+}
+
+.status-dot--off {
+    background: var(--Offline_Mode);
+    box-shadow: 0 0 6px rgba(255, 0, 0, 0.45);
+}

@@ -1,0 +1,12 @@
+.social-footer {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    padding: 14px 0 18px;
+    border-top: 1px solid var(--Line);
+    font-size: 20px;
+}
+
+.social-footer a:hover {
+    color: var(--Text_Strong);
+}

@@ -1,0 +1,94 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    background: rgba(10, 15, 20, 0.62);
+    animation: modal-fade 0.15s ease-out;
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    max-width: 394px;
+    max-height: 88dvh;
+    overflow-y: auto;
+    background: var(--Modal_Background);
+    border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+    color: var(--Text_Icons);
+}
+
+.modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px 8px;
+    border-bottom: 1px solid var(--Line);
+}
+
+.modal__title {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.modal__close {
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    color: var(--Text_Icons);
+    border-radius: 6px;
+}
+
+.modal__close:hover {
+    background: rgba(177, 188, 194, 0.15);
+}
+
+.modal__close--floating {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+.modal__message {
+    padding: 16px 16px 12px;
+    font-size: 14px;
+}
+
+.modal__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 4px 16px 16px;
+}
+
+.btn {
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.btn--primary {
+    background: var(--Buttons);
+    color: #fff;
+}
+
+.btn--secondary {
+    background: var(--Text_Icons);
+    color: var(--Background);
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+}
+
+@keyframes modal-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

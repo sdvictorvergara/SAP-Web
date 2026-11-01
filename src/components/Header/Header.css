@@ -1,0 +1,44 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    background: var(--Background);
+    border-bottom: 1px solid var(--Line);
+}
+
+.header__menu {
+    display: grid;
+    place-items: center;
+    flex: none;
+    font-size: 32px;
+    line-height: 1;
+    color: var(--Text_Icons);
+}
+
+.header__search {
+    flex: 1;
+    min-width: 0;
+    height: 24px;
+    padding: 0 12px;
+    border: none;
+    border-radius: 12px;
+    background: #fff;
+    color: #2a3540;
+    font-size: 12px;
+}
+
+.header__search::placeholder {
+    color: #aab4bd;
+}
+
+.header__account {
+    width: 30px;
+    height: 30px;
+}
+
+
+

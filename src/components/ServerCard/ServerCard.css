@@ -1,0 +1,118 @@
+.server-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 8px 16px 14px;
+    background: var(--Cards_Background);
+    border-radius: 12px;
+}
+
+.server-card__info {
+    position: absolute;
+    top: 7px;
+    right: 9px;
+    font-size: 11px;
+    line-height: 1;
+}
+
+.server-card__info:hover {
+    color: var(--Text_Strong);
+}
+
+.server-card__icon {
+    flex: none;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.server-card__body {
+    flex: 1;
+    min-width: 0;
+    font-size: 10px;
+    line-height: 1.35;
+}
+
+.server-card__body p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.server-card__name {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--Text_Strong);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.server-card__actions {
+    position: relative;
+    flex: none;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-top: 10px;
+}
+
+.server-card__power {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.server-card__power--start { background: var(--Start_Button); }
+.server-card__power--stop { background: var(--Stop_Button); }
+.server-card__power:hover { filter: brightness(1.1); }
+
+.server-card__dots {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 28px;
+    font-size: 16px;
+    color: var(--Text_Icons);
+}
+
+.server-card__menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    z-index: 20;
+    min-width: 190px;
+    list-style: none;
+    padding: 4px;
+    background: var(--Modal_Background);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.server-card__menu button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 9px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    text-align: left;
+}
+
+.server-card__menu button:hover {
+    background: rgba(177, 188, 194, 0.14);
+}
+
+.server-card__menu-danger {
+    color: var(--Stop_Button);
+}
+
+.server-card__backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 15;
+}
